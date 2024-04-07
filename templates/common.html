@@ -1,0 +1,48 @@
+<! DOCTYPEhtml>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width = device - width, initial - scale = 1.0">
+    <title>FastApi</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(17, 17, 17);
+        margin: 0
+    }
+    h1, li{
+        color:white;
+        width: 100%;
+    }
+    h3{
+        font-size: small;
+    }
+    .item {
+        border: solid 3px #ffffff;
+        width: 10%;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin: 1vh;
+    }
+    .output {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .color1 {background-color: #675BA7;}
+    .color2 {background-color: #9BC850;}
+    .color3 {background-color: #A62E5C;}
+    .color4 {background-color: #2A9FBC;}
+</style>
+
+<body>
+    <h1>Действие: {{ action }}</h1>
+    <h1>Коллекция: {{ collection }}</h1>
+    <h1>Результат: {{ result }}</h1>
+</body>
+</html>

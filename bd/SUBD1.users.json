@@ -1,0 +1,216 @@
+[{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb25d"
+  },
+  "name": "Мина",
+  "surname": "Белова",
+  "age": 55,
+  "email": "ferapont2001@example.net",
+  "password": "%SURwcv8G6",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb273"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb278"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb276"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb270"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb25e"
+  },
+  "name": "Роман",
+  "surname": "Быков",
+  "age": 56,
+  "email": "bazhenorlov@example.net",
+  "password": "!tWeeWBe%1",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb274"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb276"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb272"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb277"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb25f"
+  },
+  "name": "Алла",
+  "surname": "Куликова",
+  "age": 30,
+  "email": "shcherbakovtvorimir@example.com",
+  "password": "V#Qd6JHiFx",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb277"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb278"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb279"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb272"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb260"
+  },
+  "name": "Мокей",
+  "surname": "Степанова",
+  "age": 34,
+  "email": "mborisov@example.org",
+  "password": "+_7NY7HmyC",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb270"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb277"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb270"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb276"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb261"
+  },
+  "name": "Лаврентий",
+  "surname": "Колобов",
+  "age": 64,
+  "email": "emil66@example.com",
+  "password": "!6t40OV2fn",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb273"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb272"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb279"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb274"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb262"
+  },
+  "name": "Антонин",
+  "surname": "Комиссаров",
+  "age": 56,
+  "email": "ivanovferapont@example.com",
+  "password": "VB$9qGTaa#",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb276"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb275"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb275"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb270"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb263"
+  },
+  "name": "Афиноген",
+  "surname": "Самсонова",
+  "age": 26,
+  "email": "gushchinipati@example.net",
+  "password": "s$95dPj4N&",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb278"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb278"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb275"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb276"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb264"
+  },
+  "name": "Дарья",
+  "surname": "Шестакова",
+  "age": 61,
+  "email": "timurlebedev@example.com",
+  "password": "iwG2Pio1A#",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb271"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb279"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb273"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb274"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e770f16c38869a852fb265"
+  },
+  "name": "Поликарп",
+  "surname": "Русаков",
+  "age": 43,
+  "email": "oktjabrina81@example.com",
+  "password": "&cKT2$pq6k",
+  "chats": [
+    {
+      "$oid": "65e770f16c38869a852fb274"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb273"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb272"
+    },
+    {
+      "$oid": "65e770f16c38869a852fb270"
+    }
+  ]
+}]
