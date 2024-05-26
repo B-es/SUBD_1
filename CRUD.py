@@ -23,8 +23,9 @@ class CRUD():
     def update(self, obj:User|Message|Chat, newobj:User|Message|Chat):
         return self.collection.update_one(obj.model_dump(), {"$set": newobj.model_dump()})
         
-    def delete(self, obj:User|Message|Chat):
-        return self.collection.delete_one(obj.model_dump())
+    def delete(self, id:str):
+        print(id)
+        return self.collection.delete_one({'_id':ObjectId(id)})
         
         
     

@@ -11,6 +11,15 @@
         background-color: rgb(17, 17, 17);
         margin: 0
     }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    input{
+        width: 20%;
+    }
     h1, li{
         color:white;
         width: 100%;
@@ -34,16 +43,104 @@
         justify-content: space-evenly;
     }
 
+    label{
+        color:white;
+    }
+
     .color1 {background-color: #675BA7;}
     .color2 {background-color: #9BC850;}
     .color3 {background-color: #A62E5C;}
     .color4 {background-color: #2A9FBC;}
 </style>
-
+<script>
+    async function deleteUser(e) {
+        console.log(e)
+            const id = e.target.id;
+            const response = await fetch(`/users/delete?id=${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+                console.log(user)
+                window.location.href = '/users/select'
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        async function deleteChat(e) {
+        console.log(e)
+            const id = e.target.id;
+            const response = await fetch(`/chats/delete?id=${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+                console.log(user)
+                window.location.href = '/chats/select'
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        async function deleteMessage(e) {
+        console.log(e)
+            const id = e.target.id;
+            const response = await fetch(`/messages/delete?id=${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+                console.log(user)
+                window.location.href = '/messages/select'
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+</script>
 <body>
-    <h1>Действие: {{ action }}</h1>
+    <div style="display: flex; justify-content:space-between; padding: 1rem; text-align: center;">
+    <h1><a href="/">Обратно</a></h1>
     <h1>Коллекция: {{ collection }}</h1>
     <h1>Кол-во: {{ count }}</h1>
+    </div>
+    {% if collection == "users": %}
+        <section >
+            <label for="name">Имя</label>
+            <input id='name' value="">
+            <label for="surname">Фамилия</label>
+            <input id='surname' value="">
+            <label for="age">Возраст</label>
+            <input id='age' value="">
+            <label for="email">Почта</label>
+            <input id='email' value="">
+            <label for="password">Пароль</label>
+            <input id='password' value="">
+        </section>
+        {% else %}
+            {% if collection == "chats": %}
+            <section >
+                <label for="userId1">userId1</label>
+                <input id='userId1' value="">
+                <label for="userId2">userId2</label>
+                <input id='userId2' value="">
+            </section>
+            {% else %}
+            <section >
+                <label for="message">Сообщение</label>
+                <input id='message' value="">
+                <label for="date">Дата</label>
+                <input id='date' value="">
+            </section>
+            {% endif %} 
+        {% endif %} 
         <div class="output">
             {% for msg in values  %}
                     {% if collection == "chats": %}
@@ -52,6 +149,7 @@
                         <h3>userId1: {{ msg.userId1 }}</h3>
                         <h3>userId2: {{ msg.userId2 }}</h3>
                         <h3>Сообщения: {{ msg.messages }}</h3>
+                        <button id = {{ msg._id }} onclick="deleteChat(event)"">Удалить</button>
                     </section> 
                     {% else %}
                         {% if collection == "users": %}
@@ -62,12 +160,14 @@
                             <h3>Возраст: {{ msg.age }}</h3>
                             <h3>Почта: {{ msg.email }}</h3>
                             <h3>Пароль: {{ msg.password }}</h3>
+                            <button id = {{ msg._id }} onclick="deleteUser(event)"">Удалить</button>
                         </section> 
                         {% else %}
                         <section class="item color3">
                             <h3>id: {{ msg._id }}</h3>
                             <h3>Сообщение: {{ msg.message }}</h3>
                             <h3>Дата: {{ msg.date }}</h3>
+                            <button id = {{ msg._id }} onclick="deleteMessage(event)"">Удалить</button>
                         </section> 
                         {% endif %} 
                     {% endif %} 
